@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+	<!-- Fragment Start -->
+	<div th:fragment="myheader">
+		<header class="navbar bg-dark">
+			<div class="container">
+				<a class="navbar-brand text-light fw-bold">Spring-Busqueda</a>
+				<a th:href="@{/inicio}" class="btn btn-sm btn-outline-light px-4">Inicio</a>
+				<a th:href="@{/usuario/lista}" class="btn btn-sm btn-outline-light px-4">Consulta Usuario</a>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Buscar Productos..." aria-label="Search">
+					<a class="btn btn-outline-success">Buscar</a>
+				</form>
+			</div>
+		</header>
+	 </div>
+	<!-- Fragment End -->
+</body>
+</html>

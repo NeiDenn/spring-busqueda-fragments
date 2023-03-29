@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- Head Fragments Start -->
+<head th:replace="~{/fragments/head :: myhead}">
+</head>
+<!-- Head Fragments End -->
+
+<body>
+	<!-- Header Fragments Start -->
+	<div th:replace="~{/fragments/header :: myheader}"></div>
+	<!-- Header Fragments End -->
+
+	<div class="container mt-3">
+		<h3>Te encuentras en la página de inicio</h3>
+		<p class="h5">La cantidad de registros de usuarios es: 
+			<span th:text="${cantUsuario}"></span>
+		</p>
+	</div>
+</body>
+</html>
